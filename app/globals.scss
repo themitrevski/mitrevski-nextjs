@@ -1,0 +1,29 @@
+:root {
+  --border-radius: 12px;
+  --main-text-color: rgb(67, 67, 67);
+  --text-color-white: #fff;
+  --main-brand-color: #5fcb71;
+  --sidebar-width: 280px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--main-text-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+

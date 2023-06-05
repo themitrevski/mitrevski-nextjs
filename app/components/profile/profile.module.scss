@@ -1,0 +1,61 @@
+@import "../../mixins";
+
+.profile_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 10px 40px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+
+    @include for-desktop-up {
+        padding-top: 0;
+        width: 100%!important;
+    }
+
+    @include for-tablet-portrait-up {
+        padding-top: 0;
+        width: 50%;
+    }
+
+	&__image {
+        display: flex;
+        flex: 1;
+        max-width: 80px;
+        height: auto;
+        border-radius: 100px;
+        background-color: #fff;
+
+        @include for-desktop-up {
+            max-width: 120px;
+            flex: auto;
+        }
+	}
+
+	&__bio {
+        display: flex;
+        font-size: 0.875rem;
+        flex: 1;
+        text-align: left;
+        padding: 10px 10px;
+        @include for-desktop-up {
+            flex: auto;
+            text-align: center;
+        }
+        p {
+            margin: 0;
+        }
+		a {
+			color: #fff;
+			text-decoration: underline;
+            display: block;
+            margin-top: 10px;
+			&:hover {
+				color: rgba(0, 0, 0, 0.6);
+				
+			}
+		}
+    }
+}

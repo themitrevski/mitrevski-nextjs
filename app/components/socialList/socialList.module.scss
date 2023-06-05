@@ -1,0 +1,36 @@
+@import "../../mixins";
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex: 0 1 100%;
+
+    a {
+        width: 30px;
+        height: 30px;
+        font-size: 19px;
+        border-radius: 20px;
+        display: inline-block;
+        text-align: center;
+        background-color: #fff;
+        color: var(--main-brand-color);
+        margin: 5px;
+
+        svg {
+            vertical-align: middle;
+        }
+
+        &:hover {
+            color: var(--main-brand-color);
+            background-color: rgba(256, 256, 256, 0.8);
+        }
+
+        @include for-desktop-up {
+            width: 40px;
+            height: 40px;
+            font-size: 25px;
+        }
+    }
+}		
